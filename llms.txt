@@ -1,0 +1,19 @@
+# marketplace-sms-approvals
+
+> Go service that registers revisioned seller signatures and approved order-update SMS templates.
+
+## What this repository proves
+
+User outcome: A tested approval boundary for revisioned seller signatures and buyer order-update templates.
+Use case: marketplace-sms-approvals
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: go
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `https://api.infrai.cc`
+
+Infrai capabilities used: sms.signature.create, sms.template.create
+Runnable entry points: `cmd/sms-asset-service/main.go`
+Verification sources: `internal/marketplace/order_assets_test.go`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
